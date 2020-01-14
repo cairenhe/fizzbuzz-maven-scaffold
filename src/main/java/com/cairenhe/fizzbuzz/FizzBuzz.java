@@ -2,16 +2,16 @@ package com.cairenhe.fizzbuzz;
 
 public class FizzBuzz {
     public String of(int number) {
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         if (number % 3 == 0) {
-            stringBuilder.append("Fizz");
+            sb.append("Fizz");
         }
         if (number % 5 == 0) {
-            stringBuilder.append("Buzz");
+            sb.append("Buzz");
         }
-        if (stringBuilder.length() == 0) {
+        if (sb.length() == 0) {
             return String.valueOf(number);
         }
-        return stringBuilder.toString();
+        return sb.toString();
     }
 }

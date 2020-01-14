@@ -10,12 +10,10 @@ class FizzBuzzTest {
     @CsvSource({
             "Fizz,3",
             "Buzz,5",
-            "FizzBuzz,15",
-            "98,98"
+            "FizzBuzz,15"
     })
-    void test(String except, int number){
+    void test(String ex, int value){
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String result = fizzBuzz.of(number);
-        Assertions.assertEquals(except, result);
+        Assertions.assertEquals(ex, fizzBuzz.of(value));
     }
 }
